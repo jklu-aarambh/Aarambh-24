@@ -11,8 +11,8 @@ function workshops() {
     <div className={`relative my-10 ${montserrat.className}`}>
       <h1 className="relative font-bold text-center text-4xl my-5 md:mt-10">WORKSHOPS</h1>
       <div className="text-center text-[18px] md:text-[24px] md:mx-20">
-        <p className="my-8"> We’re excited to announce Aarambh 2024, an 18-day welcome program from June 8th to June 25th, 2024, designed just for our new Batch of 2024 students. </p>
-        <p className="my-8"> Aarambh 2024 is packed with fun, learning, and celebration. We’ll kick things off with an exciting opening event featuring inspiring leaders and teachers who will get you pumped up to learn and create amazing things. There will be fascinating talks from experts, hands-on workshops, and activities that will keep your mind buzzing with new ideas. </p>
+        <p className="my-8"> We're excited to announce Aarambh 2024, an 18-day welcome program from June 8th to June 25th, 2024, designed just for our new Batch of 2024 students. </p>
+        <p className="my-8"> Aarambh 2024 is packed with fun, learning, and celebration. We'll kick things off with an exciting opening event featuring inspiring leaders and teachers who will get you pumped up to learn and create amazing things. There will be fascinating talks from experts, hands-on workshops, and activities that will keep your mind buzzing with new ideas. </p>
         <p className="my-8"> Every day is set to be amazing, making Aarambh 2024 a blast that everyone at JKLU will be talking about for years to come. </p>
       </div>
       <div className="flex place-content-center rounded-full">
@@ -33,7 +33,7 @@ function workshops() {
           <div className='md:w-1/2 text-center md:text-left my-auto'>
             <h2 className='font-bold text-3xl py-2'>Ice Breaking</h2>
             <p className='text-wrap text-center md:text-left md:align-left text-xl'>Discover an Unforgettable Ice-Breaking Session with Manish Freeman!
-              This event isn’t just another gathering—it’s a chance to break free from the norm, have a lot of fun, and create memories that will last. Whether you're looking to meet new people, share laughter, or step out of your comfort zone, this is the place to be.
+              This event isn't just another gathering—it's a chance to break free from the norm, have a lot of fun, and create memories that will last. Whether you're looking to meet new people, share laughter, or step out of your comfort zone, this is the place to be.
 
             </p>
           </div>
