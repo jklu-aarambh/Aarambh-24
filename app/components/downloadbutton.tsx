@@ -11,7 +11,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ downloadbutton }) => {
     {/* Download Schedule */}
     <button><a 
     className="flex place-content-center items-center text-white px-4 py-2 bg-footerpink rounded-full gap-1"
-    href="/schedule.pdf" download>
+    href="/Schedule.pdf" download>
       Download Schedule{" "}<IoMdDownload className='place-items-center'/>
     </a>
     </button>

@@ -37,7 +37,7 @@ const Footer: FC = () => {
                   </Link>
                 </span>
                 <Link href="mailto:deepak.sogani@jklu.edu.in">
-                  <span className="text-black sm:text-lg">deepak.sogani@jklu.edu.in</span>
+                  <span className="text-black sm:text-lg">studentaffairs@jklu.edu.in</span>
                 </Link>
               </li>
             </ul>
