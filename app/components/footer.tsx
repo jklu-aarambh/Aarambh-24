@@ -28,11 +28,11 @@ const Footer: FC = () => {
                     <FaPhone className="h-10 w-10 mr-2" />
                   </Link>
                 </span>
-                <span className="text-black sm:text-lg">9314072153</span>
+                <span className="text-black sm:text-lg">7073699800, 9828067878</span>
               </li>
               <li className="flex items-center mb-5 sm:mx-10">
                 <span>
-                  <Link href="mailto:deepak.sogani@jklu.edu.in">
+                  <Link href="mailto:studentaffairs@jklu.edu.in">
                     <FaEnvelope className="h-10 w-10 mr-2" />
                   </Link>
                 </span>
