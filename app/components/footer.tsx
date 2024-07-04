@@ -91,13 +91,24 @@ const Footer: FC = () => {
 
         </div>
         <div className="flex flex-col md:flex-row justify-around items-center mt-8">
-          <NextLink href="/" passHref>
+          <NextLink href="https://jklu.edu.in/" passHref>
             <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] justify-center" >
               <Image
-                src="/logo.png"
+                src="/jklu.png"
                 alt="Logo"
                 width={265}
                 height={65}
+                className=" h-[4rem] w-[15rem] md:h-[3.5rem] md:w-[18.5rem] flex items-center justify-center object-contain"
+              />
+            </div>
+          </NextLink>
+          <NextLink href="https://jklu.edu.in/" passHref>
+            <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] justify-center" >
+              <Image
+                src="/mentoring-dreams.png"
+                alt="Logo"
+                width={325}
+                height={95}
                 className=" h-[4rem] w-[15rem] md:h-[3.5rem] md:w-[18.5rem] flex items-center justify-center object-contain"
               />
             </div>

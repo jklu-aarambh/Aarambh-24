@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import Aarambh from "./components/aboutaarambh"
 import Workshops from "./components/workshops"
-import Speakers from "./components/speakers"
 import Poster from "./components/poster"
 import backgroundlandscape from "../public/2560x1440.png"
 import backgroundportrait from "../public/2560x1440.png"
+import speakers from "../public/speaker.png"
 
 // import Gallery from "./components/gallery";
 
@@ -14,27 +14,17 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
-    <main className={`min-h-screen items-center bg-backg ${montserrat.className}`}>
-      <Poster/>
-      <Image
-        src={backgroundlandscape}
-        alt="background image"
-        fill
-        className="hidden md:block lg:block bg-scroll w-full h-full bg-fixed z-[-5]"
-      />
-      <Image
-        src={backgroundportrait}
-        alt="background image"
-        fill
-        className="block md:hidden lg:hidden bg-scroll w-full h-full bg-fixed z-[-5]"
-      />
-      <div className={`mx-[1rem] md:mx-[10rem] ${montserrat.className}`}>
+    <main className={`min-h-screen  items-center bg-backg ${montserrat.className}`}>
 
+      <div className="object-contain">
+        <Poster />
+      </div>
+      <div className={`mx-[1rem]  md:mx-[10rem] ${montserrat.className}`}>
         <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
           <Image
             src="/banner.png"
             alt="Cover Picture"
- fill
+            fill
             style={{ objectFit: "fill" }}
             className="hidden relative lg:block md:block"
           >
@@ -52,15 +42,26 @@ export default function Home() {
           </Image>
         </div>
         {/* About Aarambh */}
-        <Aarambh />
+        <div className="pt-10 md:pt-0 pb-2">
+          <Aarambh />
+        </div>
 
         {/* Workshops */}
-        <Workshops />
-
-        <Speakers />
+        <div className="pt-[2rem] mt-2 md:pt-0">
+          <Workshops />
+        </div>
 
       </div>
 
+      <div className="h-100vw w-100vw items-center">
+        <Image
+          src={speakers}
+          alt="Speakers"
+          height={5000}
+          width={5000}
+          className=""
+        />
+      </div>
     </main>
   );
 }
