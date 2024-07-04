@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import {
-  FaInstagram,
+  FaInstagramSquare,
   FaLinkedinIn,
   FaGlobe,
   FaEnvelope,
@@ -59,7 +59,7 @@ const Footer: FC = () => {
             <ul className="flex justify-center gap-6 md:gap-1 my-8">
               <li className="items-center lg:mx-8 mb-2">
                 <Link href="https://www.instagram.com/jklu_jaipur" target='_blank'>
-                <FaInstagram className="h-6 w-6 mr-1" />
+                <FaInstagramSquare className="h-6 w-6 mr-1" />
                 </Link>
               </li>
               <li className="items-center lg:mx-8 mb-2">

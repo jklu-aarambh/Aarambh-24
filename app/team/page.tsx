@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from 'next/link';
 import { Inter, Montserrat } from "next/font/google";
 import {
-  FaInstagram,
-  FaLinkedinIn,
   FaLinkedin,
   FaEnvelope,
 } from 'react-icons/fa';
@@ -44,9 +42,8 @@ const Team: React.FC = () => {
             {importedDataOSA.map((member) => (
               <div key={member.name} className="relative text-white">
                 <div className="absolute inset-0.5 md:-inset-0.5"></div>
-                <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-2 md:p-2">
-                  <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-full overflow-hidden md:mx-auto">
-                    <div className="w-full h-full overflow-hidden">
+                <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
+                  <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
                       <Image
                         src={member.photo}
                         alt={member.name}
@@ -55,7 +52,6 @@ const Team: React.FC = () => {
                         className="rounded-full"
                       />
                     </div>
-                  </div>
                   <div className="w-1/2 md:w-full m-1">
                     <div className="flex flex-col justify-center items-center">
                       <p className="font-bold text-black text-center text-base md:text-lg mb-">
@@ -70,12 +66,12 @@ const Team: React.FC = () => {
                       <ul className="flex sm:flex-row justify-center lg:justify-between md:justify-center my-4">
                         <li className="items-center lg:mx-4 mb-2">
                           <Link href={"mailto:" + member.email}>
-                          <FaEnvelope className="h-8 w-8 mr-2" />
+                          <FaEnvelope className="h-8 w-8 mr-2 bg-black p-1 rounded-lg" />
                           </Link>
                         </li>
                         <li className="items-center lg:mx-4 mb-2">
                           <Link href={member.linkedin}>
-                          <FaLinkedin className="h-8 w-8 mr-2" />
+                          <FaLinkedin className="h-8 w-8 bg-black mr-2 p-1 rounded-lg" />
                           </Link>
                         </li>
                       </ul>
@@ -102,16 +98,14 @@ const Team: React.FC = () => {
                 <div className="absolute inset-0.5 md:-inset-0.5"></div>
                 <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
                   <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                  <div className="relative h-[9rem] w-[9rem] md:h-40 md:w-40 overflow-hidden rounded-full mx-auto shadow-lg ">
                   <Image
                         src={member.photo}
                         alt={member.name}
                         fill
-                        style={{ objectFit: "contain" }}
-                        className="rounded-full"
+                        style={{ objectFit: "cover" }}
+                        className=""
                       />
                     </div>
-                  </div>
                   <div className="flex-grow"></div>
                   <div className="w-1/2 md:w-full m-2">
                     <div className="flex flex-col justify-center items-center">

@@ -2,7 +2,10 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import Aarambh from "./components/aboutaarambh"
 import Workshops from "./components/workshops"
+import Speakers from "./components/speakers"
 import Poster from "./components/poster"
+import backgroundlandscape from "../public/2560x1440.png"
+import backgroundportrait from "../public/2560x1440.png"
 
 // import Gallery from "./components/gallery";
 
@@ -11,10 +14,22 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
-    <main className={`min-h-screen items-center  ${montserrat.className}`}>
+    <main className={`min-h-screen items-center bg-backg ${montserrat.className}`}>
+      <Poster/>
+      <Image
+        src={backgroundlandscape}
+        alt="background image"
+        fill
+        className="hidden md:block lg:block bg-scroll w-full h-full bg-fixed z-[-5]"
+      />
+      <Image
+        src={backgroundportrait}
+        alt="background image"
+        fill
+        className="block md:hidden lg:hidden bg-scroll w-full h-full bg-fixed z-[-5]"
+      />
       <div className={`mx-[1rem] md:mx-[10rem] ${montserrat.className}`}>
-        {/* <Poster /> */}
-        {/* <img className="h-[1080px]" alt="" src="" /> */}
+
         <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
           <Image
             src="/banner.png"
@@ -41,6 +56,9 @@ export default function Home() {
 
         {/* Workshops */}
         <Workshops />
+
+        <Speakers />
+
       </div>
 
     </main>
