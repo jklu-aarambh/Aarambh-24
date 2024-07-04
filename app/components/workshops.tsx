@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 import { IoMdDownload } from "react-icons/io";
 import { Montserrat } from "next/font/google";
-import MyComponent from "../components/downloadbutton";
+import MyComponent from "../components/downloadbutton"
 import Image from 'next/image';
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
-function Workshops() {
+function workshops() {
   return (
     <div className={`relative my-10 ${montserrat.className}`}>
       <h1 className="relative font-bold text-center text-4xl my-5 md:mt-10">WORKSHOPS</h1>
@@ -15,12 +15,12 @@ function Workshops() {
         <p className="my-8"> Aarambh 2024 is packed with fun, learning, and celebration. We’ll kick things off with an exciting opening event featuring inspiring leaders and teachers who will get you pumped up to learn and create amazing things. There will be fascinating talks from experts, hands-on workshops, and activities that will keep your mind buzzing with new ideas. </p>
         <p className="my-8"> Every day is set to be amazing, making Aarambh 2024 a blast that everyone at JKLU will be talking about for years to come. </p>
       </div>
-      <div className="flex justify-center rounded-full">
+      <div className="flex place-content-center rounded-full">
         <MyComponent downloadbutton='download' />
       </div>
 
       {/* Main Events */}
-      <div className='md:text-center md:items-center md:py-12 place-items-center'>
+      <div className=' md:text-center md:items-center md:py-12 place-items-center'>
         <div className='flex flex-col items-center mt-8 lg:flex-row md:flex-row md:gap-[0.11rem] md:justify-between md:my-[4rem]'>
           <div className='md-full px-6 md:px-0 md:w-1/2 object-center'>
             <Image
@@ -33,7 +33,8 @@ function Workshops() {
           <div className='md:w-1/2 text-center md:text-left my-auto'>
             <h2 className='font-bold text-3xl py-2'>Ice Breaking</h2>
             <p className='text-wrap text-center md:text-left md:align-left text-xl'>Discover an Unforgettable Ice-Breaking Session with Manish Freeman!
-              This event isn&apos;t just another gathering—it&apos;s a chance to break free from the norm, have a lot of fun, and create memories that will last. Whether you&apos;re looking to meet new people, share laughter, or step out of your comfort zone, this is the place to be.
+              This event isn’t just another gathering—it’s a chance to break free from the norm, have a lot of fun, and create memories that will last. Whether you're looking to meet new people, share laughter, or step out of your comfort zone, this is the place to be.
+
             </p>
           </div>
         </div>
@@ -118,7 +119,8 @@ function Workshops() {
         </div>
       </div>
     </div>
-  );
+
+  )
 }
 
-export default Workshops;
+export default workshops
