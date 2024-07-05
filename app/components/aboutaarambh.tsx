@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+// import teamlist from "../../public/teamlistprint.pdf"
 
 const aarambhpics = aarambhPics;
 
@@ -44,13 +45,19 @@ function aboutaarambh() {
       </div> */}
       
       {/* Download Schedule */}
-      <div className="flex place-content-center pb-2">
+      <div className="flex place-content-center gap-2 pb-2">
         <button><a
-          className="flex text-white px-4 py-2 bg-footerpink rounded-[0.5rem] gap-1"
+          className="flex text-white px-4 py-2 bg-footerpink rounded-full gap-1"
           href="https://jklu.edu.in/" target="_blank">
           Register Now
         </a>
         </button>
+        {/* <button><a
+          className="flex text-white px-4 py-2 bg-footerpink rounded-full gap-1"
+          href={teamlist} download>
+          Download Team Details
+        </a>
+        </button> */}
       </div>
     </div>
   )

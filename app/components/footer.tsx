@@ -36,7 +36,7 @@ const Footer: FC = () => {
                     <FaEnvelope className="h-10 w-10 mr-2" />
                   </Link>
                 </span>
-                <Link href="mailto:deepak.sogani@jklu.edu.in">
+                <Link href="mailto:studentaffairs@jklu.edu.in">
                   <span className="text-black sm:text-lg">studentaffairs@jklu.edu.in</span>
                 </Link>
               </li>
