@@ -64,7 +64,7 @@ const Header: React.FC = () => {
         <div className={`relative ${montserrat.className}`} style={{ position: "sticky", top: 0, width: "100%", zIndex: 100, backgroundImage: "url('poster.png')", backgroundRepeat: "no-repeat" }}>
 
           <header
-            className="relative text-black py-3 px-4 md:py-2 md:px-14 lg:px-24 flex justify-between items-center p-4 bg-footerpink bg-opacity-30"
+            className="relative text-black py-3 px-4 md:py-2 md:px-14 lg:px-24 flex justify-between items-center p-4 bg-footerpink bg-opacity-10"
           >
             <div className="flex items-start items-center gap-0.1">
 
@@ -76,16 +76,6 @@ const Header: React.FC = () => {
                     width={265}
                     height={65}
                     className=" h-[3rem] w-[10rem] md:h-[4.5rem] md:w-[12.5rem] flex items-center justify-center object-contain"
-                  />
-                </div>
-              </NextLink>
-              <NextLink href="https://jklu.edu.in/" passHref>
-                <div className="relative h-[2.5rem] w-[10rem] md:h-[3.5rem] flex items-center justify-start" >
-                  <Image
-                    src="/mentoring-dreams.png"
-                    alt="Mentoring-Dreams"
-                    fill
-                    className="h-[1.5rem] w-[2rem] md:h-[4.5rem] md:w-[15.5rem] items-center justify-center object-contain"
                   />
                 </div>
               </NextLink>

@@ -25,7 +25,7 @@ const Footer: FC = () => {
               <li className="flex items-center mb-5 sm:mx-10">
                 <span>
                   <Link href="/">
-                    <FaPhone className="h-10 w-10 mr-2" />
+                    <FaPhone className="h-6 w-6 mr-2" />
                   </Link>
                 </span>
                 <span className="text-black sm:text-lg">7073699800, 9828067878</span>
@@ -33,7 +33,7 @@ const Footer: FC = () => {
               <li className="flex items-center mb-5 sm:mx-10">
                 <span>
                   <Link href="mailto:studentaffairs@jklu.edu.in">
-                    <FaEnvelope className="h-10 w-10 mr-2" />
+                    <FaEnvelope className="h-6 w-6 mr-2" />
                   </Link>
                 </span>
                 <Link href="mailto:studentaffairs@jklu.edu.in">
@@ -50,7 +50,7 @@ const Footer: FC = () => {
               <li className="flex items-start mb-5">
                 <span>
                   <Link href="https://www.jklu.edu.in/">
-                    <MapPinIcon className="h-10 w-10 mr-2" />
+                    <MapPinIcon className="h-6 w-6 mr-2" />
                   </Link>
                 </span>
                 <span className="text-black sm:text-lg">JK Lakshmipat University, Mahapura Rd, near Mahindra SEZ, Mahapura, Rajasthan 302026</span>
@@ -92,23 +92,12 @@ const Footer: FC = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-around items-center mt-8">
           <NextLink href="https://jklu.edu.in/" passHref>
-            <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] justify-center" >
+            <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] object-center justify-center" >
               <Image
                 src="/jklu.png"
                 alt="Logo"
-                width={265}
+                width={260}
                 height={65}
-                className=" h-[4rem] w-[15rem] md:h-[3.5rem] md:w-[18.5rem] flex items-center justify-center object-contain"
-              />
-            </div>
-          </NextLink>
-          <NextLink href="https://jklu.edu.in/" passHref>
-            <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] justify-center" >
-              <Image
-                src="/mentoring-dreams.png"
-                alt="Logo"
-                width={325}
-                height={95}
                 className=" h-[4rem] w-[15rem] md:h-[3.5rem] md:w-[18.5rem] flex items-center justify-center object-contain"
               />
             </div>

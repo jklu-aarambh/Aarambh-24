@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Image */}
       <div className="relative">
         {/* Desktop Hero Image */}
-        <div className="hidden md:block lg:block relative object-cover  inset-0 overflow-hidden  z-[-1] ">
+        <div className="hidden md:block lg:block relative object-cover  inset-0 overflow-hidden md:mb-12 z-[-1] ">
           <Image
             src={backgroundLandscape}
             alt="Background Landscape"
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Content */}
       <div className={`mx-[1rem] md:mx-[10rem] ${montserrat.className}`}>
         {/* About Aarambh */}
-        <div className="pt-10 md:pt-0">
+        <div className="pt-10 md:pt-0 md:mb-12">
           <Aarambh />
         </div>
 
