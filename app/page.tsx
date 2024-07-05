@@ -12,16 +12,16 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
-    <main className={`min-w-screen items-center bg-backg ${montserrat.className}`}>
+    <main className={`min-w-screen items-center${montserrat.className}`}>
       {/* Hero Image */}
       <div className="relative">
         {/* Desktop Hero Image */}
-        <div className="hidden md:block lg:block absolute inset-0 overflow-hidden">
+        <div className="hidden md:block lg:block relative object-cover  inset-0 overflow-hidden  z-[-1] ">
           <Image
             src={backgroundLandscape}
             alt="Background Landscape"
-            layout="responsive"
-            objectFit="cover"
+            layout="cover"
+            objectFit="fill"
             objectPosition="center"
           />
         </div>
