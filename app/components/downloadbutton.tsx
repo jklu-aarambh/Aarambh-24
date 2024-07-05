@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import { IoMdDownload } from 'react-icons/io';
-import schedulepdf from "@/public/schedule.pdf"
 
 interface MyComponentProps {
   downloadbutton: string;
