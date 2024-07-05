@@ -20,8 +20,8 @@ function aboutaarambh() {
         <p className="my-8"> There will be fascinating talks from experts, hands-on workshops, and activities that will keep your mind buzzing with new ideas. Every day is set to be amazing, making Aarambh 2024 a blast that everyone at JKLU will be talking about for years to come. </p>
       </div>
 
-      <div className='block lg:hidden md:hidden flex px-2 pt-2 md:pb-[0.01rem] gap-10 justify-center'>
         {/* Mobile Carousel */}
+      {/* <div className='block lg:hidden md:hidden flex px-2 pt-2 md:pb-[0.01rem] gap-10 justify-center'>
         <div className='flex p-1 gap-6 justify-center'>
           <Carousel>
             <CarouselContent>
@@ -36,12 +36,12 @@ function aboutaarambh() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {/* <CarouselPrevious /> */}
-            {/* <CarouselNext /> */}
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
 
         </div>
-      </div>
+      </div> */}
       {/* Download Schedule */}
       <div className="flex place-content-center pb-2">
         <button><a
