@@ -13,7 +13,7 @@ const aarambhpics = aarambhPics;
 
 function aboutaarambh() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col">
       <h1 className="relative font-bold text-center text-4xl my-1 md:mt-10">What is AARAMBH?</h1>
       <div className="text-center text-[18px] md:text-[24px] md:mx-20">
         <p className="my-8"> Aarambh 2024, an 18-day welcome program from July 8th to July 25th 2024, is packed with fun, learning, and celebration. We’ll kick things off with an exciting opening event featuring inspiring leaders and teachers who will get you pumped up to learn and create amazing things. </p>

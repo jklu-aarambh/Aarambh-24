@@ -42,12 +42,12 @@ export default function Home() {
           </Image>
         </div> */}
         {/* About Aarambh */}
-        <div className="pt-10 md:pt-0 pb-2">
+        <div className="pt-10 md:pt-0">
           <Aarambh />
         </div>
 
         {/* Workshops */}
-        <div className="pt-[2rem] mt-2 md:pt-0">
+        <div className="pt-[2rem] md:pt-0">
           <Workshops />
         </div>
 

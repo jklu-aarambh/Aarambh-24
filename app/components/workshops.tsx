@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 function workshops() {
   return (
-    <div className={`relative my-10 ${montserrat.className}`}>
+    <div className={`relative my-1 ${montserrat.className}`}>
       <h1 className="relative font-bold text-center text-4xl my-5 md:mt-10">WORKSHOPS</h1>
       <div className="text-center text-[18px] md:text-[24px] md:mx-20">
         <p className="my-8"> We're excited to announce Aarambh 2024, an 18-day welcome program from July 8th to July 25th, 2024, designed just for our new Batch of 2024 students. </p>
