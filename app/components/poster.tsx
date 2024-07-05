@@ -18,8 +18,7 @@ function poster() {
                 <Image
                     src="/posterportrait.png"
                     alt="Cover Picture"
-                    width={480}
-                    height={480}
+                  fill
                     style={{ objectFit: "cover" }}
                     className="relative block lg:hidden md:hidden w-full h-full mb-10"
                 >

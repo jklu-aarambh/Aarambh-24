@@ -14,7 +14,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
-    <main className={`min-h-screen  items-center bg-backg ${montserrat.className}`}>
+    <main className={`min-w-screen  items-center bg-backg ${montserrat.className}`}>
 
       <div className="object-contain">
         <Poster />
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="absolute inset-x-0 top-[4.5rem] z-[-1]">
           <Image
-            src="/bannerportrait.png"
+            src="/posterportrait.png"
             alt="Cover Picture"
             width={400}
             height={400}
