@@ -74,7 +74,7 @@ function workshops() {
               className='rounded-[2rem] mx-auto' />
           </div>
           <div className='md:w-1/2 text-center text-left my-auto'>
-            <h2 className='font-bold text-3xl py-2'>Rang Mastaaney</h2>
+            <h2 className='font-bold text-3xl py-2 text-left'>Rang Mastaaney</h2>
             <p className='text-wrap text-center md:text-left md:align-left text-xl pb-4 md:pb-0'>For 13 years Rang Mastaaney has been wowing audiences with their shows. They have a repertoire of 65 plays, 250 stage productions and 1000 street shows of their superhit play Ab Bas. And they hold the record of being the only theatre group in the country to present 7 different plays by the same group in 4 consecutive days in Alwar.
             </p>
           </div>
