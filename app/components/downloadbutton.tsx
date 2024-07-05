@@ -24,7 +24,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ downloadbutton }) => {
       {/* Download Schedule */}
       <button><a
         className="flex place-content-center items-center text-white border border-white md:border-none px-4 py-2 bg-footerpink rounded-full gap-1"
-        href="/Schedule.pdf" download>
+        href="/schedule.pdf" download>
         Download Schedule{" "}<IoMdDownload className='place-items-center' />
       </a>
       </button>

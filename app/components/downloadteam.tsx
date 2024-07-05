@@ -23,7 +23,7 @@ const DownloadTeam: React.FC<DownloadTeamProps> = ({ downloadbutton }) => {
     <div>
       {/* Download teamlist */}
       <button><a
-        className="flex place-content-center items-center text-white px-4 py-2  border border-white md:border-none bg-footerpink rounded-full gap-1"
+        className="flex place-content-center items-center text-white px-4 py-2 border border-white md:border-none bg-footerpink rounded-full gap-1"
         href="/teamlist.pdf" download>
         Download TeamList{" "}<IoMdDownload className='place-items-center' />
       </a>
