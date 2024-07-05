@@ -20,7 +20,7 @@ export default function Home() {
         <Poster />
       </div>
       <div className={`mx-[1rem]  md:mx-[10rem] ${montserrat.className}`}>
-        <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
+        {/* <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
           <Image
             src="/banner.png"
             alt="Cover Picture"
@@ -40,7 +40,7 @@ export default function Home() {
             className="relative block lg:hidden md:hidden"
           >
           </Image>
-        </div>
+        </div> */}
         {/* About Aarambh */}
         <div className="pt-10 md:pt-0 pb-2">
           <Aarambh />
