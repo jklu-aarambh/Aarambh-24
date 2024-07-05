@@ -8,13 +8,13 @@ interface MyComponentProps {
 const MyComponent: React.FC<MyComponentProps> = ({ downloadbutton }) => {
   return (
     <div>
-    {/* Download Schedule */}
-    <button><a 
-    className="flex place-content-center items-center text-white px-4 py-2 bg-footerpink rounded-full gap-1"
-    href="/Schedule.pdf" download>
-      Download Schedule{" "}<IoMdDownload className='place-items-center'/>
-    </a>
-    </button>
+      {/* Download Schedule */}
+      <button><a
+        className="flex place-content-center items-center text-white px-4 py-2 bg bg:[#EBC1CA] md:bg-footerpink rounded-full gap-1"
+        href="/Schedule.pdf" download>
+        Download Schedule{" "}<IoMdDownload className='place-items-center' />
+      </a>
+      </button>
     </div>
   );
 };

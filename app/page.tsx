@@ -1,64 +1,44 @@
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
-import Aarambh from "./components/aboutaarambh"
-import Workshops from "./components/workshops"
-import Poster from "./components/poster"
-import backgroundlandscape from "../public/2560x1440.png"
-import backgroundportrait from "../public/2560x1440.png"
-import speakers from "../public/speaker.png"
-
-// import Gallery from "./components/gallery";
+import speakers from "../public/speaker.png";
+import Poster from "./components/poster";
+import AboutAarambh from "./components/aboutaarambh";
+import Workshops from "./components/workshops";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
-
 export default function Home() {
   return (
-    <main className={`min-h-screen  items-center bg-backg ${montserrat.className}`}>
-
-      <div className="object-contain">
-        <Poster />
-      </div>
-      <div className={`mx-[1rem]  md:mx-[10rem] ${montserrat.className}`}>
-        <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
+    <main className={`${montserrat.className}`}>
+      <div className="relative w-full h-[450px] md:h-screen">
           <Image
             src="/banner.png"
             alt="Cover Picture"
             fill
-            style={{ objectFit: "fill" }}
-            className="hidden relative lg:block md:block"
-          >
-          </Image>
-        </div>
-        <div className="absolute inset-x-0 top-[4.5rem] z-[-1]">
+            style={{ objectFit: "cover" }}
+            className="hidden md:block"
+          />
           <Image
             src="/bannerportrait.png"
             alt="Cover Picture"
-            width={400}
-            height={400}
+            fill
             style={{ objectFit: "cover" }}
-            className="relative block lg:hidden md:hidden"
-          >
-          </Image>
+            className="block md:hidden"
+          />
         </div>
-        {/* About Aarambh */}
-        <div className="pt-10 md:pt-0 pb-2">
-          <Aarambh />
+      <div className={`${montserrat.className}`}>
+        <div className="md:pt-0 pb-2">
+          <AboutAarambh />
         </div>
-
-        {/* Workshops */}
         <div className="pt-[2rem] mt-2 md:pt-0">
           <Workshops />
         </div>
-
       </div>
-
-      <div className="h-100vw w-100vw items-center">
+      <div className="bg-[#FFF9F7] px-[1rem] md:px-[5rem] w-full">
         <Image
           src={speakers}
           alt="Speakers"
-          height={5000}
-          width={5000}
+          layout="responsive"
           className=""
         />
       </div>

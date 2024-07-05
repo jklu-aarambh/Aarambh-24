@@ -26,7 +26,7 @@ const Team: React.FC = () => {
       >
 
         {/* OFFICE OF STUDENT AFFAIRS */}
-        <section className="mb-1 md:mb-16">
+        <section className="flex flex-col justify-center mb-1 md:mb-16">
           <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
             <span
               className="text-black bg-clip-text"
@@ -85,7 +85,7 @@ const Team: React.FC = () => {
 
         {/* ORGANISING COMMITTEE */}
         <section className="mb-1 md:mb-16">
-          <h3 className="text-[1.8rem] md:text-[4rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
+          <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
             <span
               className="text-black bg-clip-text"
             >
