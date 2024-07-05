@@ -27,6 +27,26 @@ const Footer: React.FC = () => {
                 <FaEnvelope className="h-5 w-5 mr-2" />
                 <Link href="mailto:studentaffairs@jklu.edu.in" className="text-black hover:underline">
                   studentaffairs@jklu.edu.in
+
+          <div className="w-full md:w-2.8/10">
+            <h2 className="text-4xl font-bold mb-4 sm:mx-10">Contact Us</h2>
+            <ul className="list-none">
+              <li className="flex items-center mb-5 sm:mx-10">
+                <span>
+                  <Link href="/">
+                    <FaPhone className="h-6 w-6 mr-2" />
+                  </Link>
+                </span>
+                <span className="text-black sm:text-lg">7073699800, 9828067878</span>
+              </li>
+              <li className="flex items-center mb-5 sm:mx-10">
+                <span>
+                  <Link href="mailto:studentaffairs@jklu.edu.in">
+                    <FaEnvelope className="h-6 w-6 mr-2" />
+                  </Link>
+                </span>
+                <Link href="mailto:studentaffairs@jklu.edu.in">
+                  <span className="text-black sm:text-lg">studentaffairs@jklu.edu.in</span>
                 </Link>
               </li>
             </ul>
@@ -44,6 +64,36 @@ const Footer: React.FC = () => {
               <SocialLink href="https://in.linkedin.com/school/jk-lakshmipat-university-jaipur/" icon={<FaLinkedinIn className="h-6 w-6" />} />
               <SocialLink href="https://www.jklu.edu.in/" icon={<FaGlobe className="h-6 w-6" />} />
             </div>
+          {/* Address and social media icons Section */}
+          <div className="w-full md:w-2.8/10 my-6 md:my-0 items-end">
+            <h2 className="text-4xl font-bold mb-4 md:text-left">Address</h2>
+            <ul className="list-none flex-wrap">
+              <li className="flex items-start mb-5">
+                <span>
+                  <Link href="https://www.jklu.edu.in/">
+                    <MapPinIcon className="h-6 w-6 mr-2" />
+                  </Link>
+                </span>
+                <span className="text-black sm:text-lg">JK Lakshmipat University, Mahapura Rd, near Mahindra SEZ, Mahapura, Rajasthan 302026</span>
+              </li>
+            </ul>
+            <ul className="flex justify-center gap-6 md:gap-1 my-8">
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://www.instagram.com/jklu_jaipur" target='_blank'>
+                <FaInstagramSquare className="h-6 w-6 mr-1" />
+                </Link>
+              </li>
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://in.linkedin.com/school/jk-lakshmipat-university-jaipur/" target='_blank'>
+                  <FaLinkedinIn className="h-6 w-6 mr-1" />
+                </Link>
+              </li>
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://www.jklu.edu.in/" target='_blank'>
+                  <FaGlobe className="h-6 w-6 mr-1" />
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Map Section */}
@@ -61,10 +111,26 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
+
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between">
           <Logo src="/jklu.png" alt="JKLU Logo" />
           <Logo src="/mentoring-dreams.png" alt="Mentoring Dreams Logo" />
           <div className="text-center mt-4 md:mt-0">
+
+        <div className="flex flex-col md:flex-row justify-around items-center mt-8">
+          <NextLink href="https://jklu.edu.in/" passHref>
+            <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] object-center justify-center" >
+              <Image
+                src="/jklu.png"
+                alt="Logo"
+                width={260}
+                height={65}
+                className=" h-[4rem] w-[15rem] md:h-[3.5rem] md:w-[18.5rem] flex items-center justify-center object-contain"
+              />
+            </div>
+          </NextLink>
+          <div className="w-full md:w-1/3 mt-6 md:mt-0 text-center">
+
             <p className="text-sm">©2024 JK Lakshmipat University. All rights reserved.</p>
             <div className="mt-2">
               <CreditLink href="https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/" text="Design by Rupakshi Sharma" />

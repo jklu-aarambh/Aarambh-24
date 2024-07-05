@@ -11,6 +11,12 @@ export default function Home() {
   return (
     <main className={`${montserrat.className}`}>
       <div className="relative w-full h-[450px] md:h-screen">
+  
+    <main className={`min-w-screen items-center${montserrat.className}`}>
+      {/* Hero Image */}
+      <div className="relative">
+        {/* Desktop Hero Image */}
+        <div className="hidden md:block lg:block relative object-cover  inset-0 overflow-hidden md:mb-12 z-[-1] ">
           <Image
             src="/banner.png"
             alt="Cover Picture"
@@ -29,6 +35,13 @@ export default function Home() {
       <div className={`${montserrat.className}`}>
         <div className="md:pt-0 pb-2">
           <AboutAarambh />
+      </div>
+
+      {/* Content */}
+      <div className={`mx-[1rem] md:mx-[10rem] ${montserrat.className}`}>
+        {/* About Aarambh */}
+        <div className="pt-10 md:pt-0 md:mb-12">
+          <Aarambh />
         </div>
         <div className="pt-[2rem] mt-2 md:pt-0">
           <Workshops />
