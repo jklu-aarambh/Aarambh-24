@@ -39,7 +39,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center">
-              <Image src="/jklu.png" alt="JKLU" width={93.75} height={25} className="object-contain" />
+              <Image src="/jklu.png" alt="JKLU" width={75} height={20} className="object-contain" />
             </Link>
             <Link href="https://jklu.edu.in/" className="flex items-center">
               <Image src="/mentoring-dreams.png" alt="Mentoring-Dreams" width={135} height={30} className="object-contain" />
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           <nav className="flex flex-col space-y-6 mt-16">
             <NavLink href="/" text="HOME" active={pathname === "/"} mobile />
             <NavLink href="/team" text="TEAM" active={pathname === "/team"} mobile />
-            <div className="mt-6">
+            <div className="mt-6 border-white">
               <MyComponent downloadbutton='download' />
             </div>
           </nav>

@@ -7,6 +7,7 @@ import { Inter, Montserrat } from "next/font/google";
 import {
   FaLinkedin,
   FaEnvelope,
+  FaPhone
 } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -30,10 +31,10 @@ const Team: React.FC = () => {
           <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
             <span
               className="text-black bg-clip-text"
-              // style={{
-              //   backgroundImage:
-              //     "linear-gradient(90deg, #b22d4e 15%, #249683 84.22%)",
-              // }}
+            // style={{
+            //   backgroundImage:
+            //     "linear-gradient(90deg, #b22d4e 15%, #249683 84.22%)",
+            // }}
             >
               OFFICE OF STUDENT AFFFAIRS
             </span>
@@ -44,14 +45,14 @@ const Team: React.FC = () => {
                 <div className="absolute inset-0.5 md:-inset-0.5"></div>
                 <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
                   <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                      <Image
-                        src={member.photo}
-                        alt={member.name}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="rounded-full"
-                      />
-                    </div>
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="rounded-full"
+                    />
+                  </div>
                   <div className="w-1/2 md:w-full m-1">
                     <div className="flex flex-col justify-center items-center">
                       <p className="font-bold text-black text-center text-base md:text-lg mb-">
@@ -60,18 +61,18 @@ const Team: React.FC = () => {
                       <p className="flex justify-center text-center text-[#737373] hover:underline">
                         {member.committee}
                       </p>
-                      <p className="flex justify-center text-black hover:underline">
+                      {/* <p className="flex justify-center text-black hover:underline">
                         {member.contact}
-                      </p>
+                      </p> */}
                       <ul className="flex sm:flex-row justify-center lg:justify-between md:justify-center my-4">
                         <li className="items-center lg:mx-4 mb-2">
                           <Link href={"mailto:" + member.email}>
-                          <FaEnvelope className="h-8 w-8 mr-2 bg-black p-1 rounded-lg" />
+                            <FaEnvelope className="h-8 w-8 mr-2 bg-black p-1 rounded-lg" />
                           </Link>
                         </li>
                         <li className="items-center lg:mx-4 mb-2">
                           <Link href={member.linkedin}>
-                          <FaLinkedin className="h-8 w-8 bg-black mr-2 p-1 rounded-lg" />
+                            <FaLinkedin className="h-8 w-8 bg-black mr-2 p-1 rounded-lg" />
                           </Link>
                         </li>
                       </ul>
@@ -98,26 +99,27 @@ const Team: React.FC = () => {
                 <div className="absolute inset-0.5 md:-inset-0.5"></div>
                 <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
                   <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                  <Image
-                        src={member.photo}
-                        alt={member.name}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className=""
-                      />
-                    </div>
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className=""
+                    />
+                  </div>
                   <div className="flex-grow"></div>
                   <div className="w-1/2 md:w-full m-2">
                     <div className="flex flex-col justify-center items-center">
-                      <p className="font-bold text-black text-center text-sm md:text-lg mb-2"> 
-                      {member.name}                      
+                      <p className="font-bold text-black text-center text-sm md:text-lg mb-2">
+                        {member.name}
                       </p>
                       <a
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex justify-center text-[#737373] hover:underline">LinkedIn</a>
-                                              <p className="flex justify-center text-black hover:underline">
+                      <p className="flex justify-center text-black hover:underline">
+                          <FaPhone className="h-5 w-5 mr-2" />
                         {member.contact}
                       </p>
                     </div>
@@ -144,13 +146,13 @@ const Team: React.FC = () => {
                 className="flex flex-col text-white items-around text-center md:text-center justify-self-center mb-8"
               >
                 <div className="relative h-[9rem] w-[9rem] md:h-40 md:w-40 overflow-hidden rounded-full mx-auto shadow-lg ">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="rounded-full"
-                    />
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    className="rounded-full"
+                  />
                 </div>
                 <div className="flex flex-col text-center">
                   <p className="font-bold text-black text-base mt-[1rem] text-center md:text-[1.7rem] md:mb-[1rem]">

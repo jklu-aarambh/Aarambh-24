@@ -1,13 +1,14 @@
 import aarambhPics from "../data/aarambhpics.json";
 import Image from 'next/image';
 import React from 'react';
+import DownloadTeam from "../components/downloadteam"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/carousel"
 
 const aarambhpics = aarambhPics;
 
@@ -22,8 +23,6 @@ function AboutAarambh() {
         <p>
           Inspiring talks, hands-on workshops, and engaging activities led by industry experts and thought leaders. Each day brings new opportunities to explore, learn, and connect, setting the stage for an unforgettable academic journey.
         </p>
-      </div>
-
       <div className='mt-12 mb-8'>
         {/* Mobile Carousel */}
         <div className='lg:hidden'>
@@ -76,6 +75,14 @@ function AboutAarambh() {
         >
           Join AARAMBH 2024
         </a>
+      </div>
+      
+      {/* Download Team */}
+      <div className="flex place-content-center gap-2 pb-2">
+        <div className="flex place-content-center rounded-full">
+                <DownloadTeam downloadbutton='download' />
+              </div>
+      </div>
       </div>
     </div>
   );
