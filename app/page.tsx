@@ -19,7 +19,7 @@ export default function Home() {
             className="hidden md:block"
           />
           <Image
-            src="/bannerportrait.png"
+            src="/posterportrait.png"
             alt="Cover Picture"
             fill
             style={{ objectFit: "cover" }}

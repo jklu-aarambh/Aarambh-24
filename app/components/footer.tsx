@@ -70,6 +70,9 @@ const Footer: React.FC = () => {
               <CreditLink href="https://www.linkedin.com/in/rupakshi-sharma-interaction-designer/" text="Design by Rupakshi Sharma" />
               <span className="text-xs"> & </span>
               <CreditLink href="https://github.com/ShubhamJain-23" text="Developed by Shubham Jain" />
+              <span className="text-xs"> , Special Support by </span>
+              <CreditLink href="https://github.com/adistrim" text="Adistrim," />
+              <CreditLink href="https://in.linkedin.com/in/sujal50" text=" Sujal" />
             </div>
           </div>
         </div>
