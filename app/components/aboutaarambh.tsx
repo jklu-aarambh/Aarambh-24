@@ -56,7 +56,7 @@ function AboutAarambh() {
                 src={member.image}
                 alt="aarambh-picture"
                 width={400}
-                height={300}
+                height={200}
                 layout="responsive"
                 className='object-cover rounded-lg'
               />
