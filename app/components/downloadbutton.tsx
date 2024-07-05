@@ -20,10 +20,13 @@ const MyComponent: React.FC<MyComponentProps> = ({ downloadbutton }) => {
   };
 
   return (
-    <div className='App'>
+    <div>
       {/* Download Schedule */}
-      <button onClick={downloadFileAtURL} className="flex place-content-center items-center text-white px-4 py-2 bg-footerpink rounded-full gap-1">
-        Download Schedule <IoMdDownload className='place-items-center'/>
+      <button><a
+        className="flex place-content-center items-center text-white px-4 py-2 bg bg:[#EBC1CA] md:bg-footerpink rounded-full gap-1"
+        href="/Schedule.pdf" download>
+        Download Schedule{" "}<IoMdDownload className='place-items-center' />
+      </a>
       </button>
     </div>
   );
