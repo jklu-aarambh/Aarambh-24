@@ -26,7 +26,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({ title, description, imageSr
     </div>
     <div className='w-full md:w-1/2 text-center md:text-left'>
       <h2 className='font-bold text-2xl md:text-3xl mb-4'>{title}</h2>
-      <p className='text-lg'>{description}</p>
+      <p className='text-lg md:text-1xl text-justify'>{description}</p>
     </div>
   </div>
 );
