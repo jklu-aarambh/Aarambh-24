@@ -1,83 +1,106 @@
-import dataTeam from "../data/dataTeam.json";
-import dataOC from "../data/dataOC.json";
-import dataSpeakers from "../data/speakers.json";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link';
-import { Inter, Montserrat } from "next/font/google";
-import {
-  FaLinkedin,
-  FaEnvelope,
-  FaLinkedinIn,
-  FaPhone
-} from 'react-icons/fa';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { Montserrat } from "next/font/google";
+import { FaTimes } from 'react-icons/fa';
+import dataSpeakers from "../data/speakers.json";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
-interface SocialLinkProps {
-  href: string;
-  icon: React.ReactNode;
+interface Speaker {
+  name: string;
+  event: string;
+  description: string;
+  photo: string;
+  linkedin: string;
 }
 
-const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => (
-  <Link href={href} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
-    {icon}
+const SocialLink: React.FC<{ href: string; text: string }> = ({ href, text }) => (
+  <Link href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors font-semibold">
+    {text}
   </Link>
 );
 
+const SpeakerModal: React.FC<{ speaker: Speaker; onClose: () => void }> = ({ speaker, onClose }) => (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <div className="bg-white rounded-lg max-w-2xl w-full p-6 relative">
+      <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+        <FaTimes className="h-6 w-6" />
+      </button>
+      <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <div className="relative h-48 w-48 flex-shrink-0">
+          <Image
+            src={speaker.photo}
+            alt={`Photo of ${speaker.name}`}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-full"
+          />
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold mb-2">{speaker.name}</h3>
+          <p className="text-gray-600 mb-3">{speaker.event}</p>
+          <p className="text-gray-700 mb-4">{speaker.description}</p>
+          {speaker.linkedin && (
+            <SocialLink href={speaker.linkedin} text="LinkedIn" />
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const SpeakerCard: React.FC<{ speaker: Speaker; onClick: () => void }> = ({ speaker, onClick }) => (
+  <div
+    className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl p-6 cursor-pointer"
+    onClick={onClick}
+  >
+    <div className="relative h-48 w-48 mx-auto mb-6 overflow-hidden rounded-full shadow-md">
+      <Image
+        src={speaker.photo}
+        alt={`Photo of ${speaker.name}`}
+        layout="fill"
+        objectFit="cover"
+        className="rounded-full"
+        priority
+      />
+    </div>
+    <div className="text-center">
+      <h3 className="font-bold text-xl mb-2">{speaker.name}</h3>
+      <p className="text-gray-600 mb-3">{speaker.event}</p>
+    </div>
+  </div>
+);
+
 const Team: React.FC = () => {
-  const importedDataSpeakers = dataSpeakers;
+  const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
   return (
-    <div className="">
-      <div
-        className={`mx-[1rem] md:mx-[5rem] lg:mx-[5rem] mt-8 md:mt-8 mb-[5rem] md:mb-[10rem] ${montserrat.className}`}
-      >
+    <div className={`bg-gray-50 ${montserrat.className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <section className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Speakers & Facilitators</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">Meet our esteemed speakers and facilitators who are experts in their fields. <span className=" underline " >Click on a speaker to learn more.</span> </p>
+        </section>
 
-        {/* Speakers List */}
-        <section className="flex flex-col justify-center mb-1 md:mb-16">
-          <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
-            <span
-              className="text-black bg-clip-text"
-            >
-              SPEAKERS / FACILITATORS
-            </span>
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[1rem] mx-[1rem] md:mx-[1rem]">
-            {importedDataSpeakers.map((member) => (
-              <div key={member.name} className="relative text-white">
-              <div className="absolute inset-0.5 md:-inset-0.5"></div>
-              <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
-                <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className=""
-                  />
-                </div>
-                <div className="flex-grow"></div>
-                <div className="w-1/2 md:w-full m-2">
-                  <div className="flex flex-col justify-center items-center">
-                    <p className="font-bold text-black text-center text-lg md:text-xl mb-2">
-                      {member.name}
-                    </p>
-                    <Link href={member.linkedin}>
-                    <FaLinkedin className="h-6 w-6 md:h-8 md:w-8 bg-black  mr-2 p-1 rounded-lg" />
-                    </Link>                      
-                    <p className="flex justify-center text-center text-black md:pt-2">
-                      {member.event}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {dataSpeakers.map((speaker: Speaker) => (
+            <SpeakerCard
+              key={speaker.name}
+              speaker={speaker}
+              onClick={() => setSelectedSpeaker(speaker)}
+            />
+          ))}
         </section>
       </div>
+
+      {selectedSpeaker && (
+        <SpeakerModal
+          speaker={selectedSpeaker}
+          onClose={() => setSelectedSpeaker(null)}
+        />
+      )}
     </div>
   );
 };
