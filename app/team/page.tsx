@@ -1,191 +1,68 @@
+import React from "react";
+import Image from "next/image";
+import Link from 'next/link';
+import { Montserrat } from "next/font/google";
+
+import TeamMemberCard from "../components/TeamMemberCard";
+import SectionTitle from "../components/SectionTitle";
 import dataTeam from "../data/dataTeam.json";
 import dataOC from "../data/dataOC.json";
 import dataOSA from "../data/dataOSA.json";
-import Image from "next/image";
-import Link from 'next/link';
-import { Inter, Montserrat } from "next/font/google";
-import {
-  FaLinkedin,
-  FaEnvelope,
-  FaLinkedinIn,
-  FaPhone
-} from 'react-icons/fa';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
-
-interface SocialLinkProps {
-  href: string;
-  icon: React.ReactNode;
-}
-
-const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => (
-  <Link href={href} target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
-    {icon}
-  </Link>
-);
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 const Team: React.FC = () => {
-  const importedDataOC = dataOC;
-  const importedDataTeam = dataTeam;
-  const importedDataOSA = dataOSA;
-
   return (
-    <div className="">
-      <div
-        className={`mx-[1rem] md:mx-[5rem] lg:mx-[5rem] mt-8 md:mt-8 mb-[5rem] md:mb-[10rem] ${montserrat.className}`}
-      >
-
+    <div className={`bg-gray-100 ${montserrat.className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-16">
+        
         {/* OFFICE OF STUDENT AFFAIRS */}
-        <section className="flex flex-col justify-center mb-1 md:mb-16">
-          <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
-            <span
-              className="text-black bg-clip-text"
-            // style={{
-            //   backgroundImage:
-            //     "linear-gradient(90deg, #b22d4e 15%, #249683 84.22%)",
-            // }}
-            >
-              OFFICE OF STUDENT AFFAIRS
-            </span>
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[1rem] mx-[1rem] md:mx-[1rem]">
-            {importedDataOSA.map((member) => (
-              <div key={member.name} className="relative text-white">
-                <div className="absolute inset-0.5 md:-inset-0.5"></div>
-                <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
-                  <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <div className="w-1/2 md:w-full m-1">
-                    <div className="flex flex-col justify-center items-center">
-                      <p className="font-bold text-black text-center text-base md:text-lg mb-">
-                        {member.name}
-                      </p>
-                      <p className="flex justify-center text-center text-[#737373] hover:underline">
-                        {member.committee}
-                      </p>
-                      {/* <p className="flex justify-center text-black hover:underline">
-                        {member.contact}
-                      </p> */}
-                      <ul className="flex sm:flex-row justify-center lg:justify-between md:justify-center my-4">
-                        <li className="items-center lg:mx-4 mb-2">
-                          <Link href={"mailto:" + member.email}>
-                            <FaEnvelope className="h-8 w-8 mr-2 bg-black p-1 rounded-lg" />
-                          </Link>
-                        </li>
-                        <li className="items-center lg:mx-4 mb-2">
-                          <Link href={member.linkedin}>
-                            <FaLinkedin className="h-8 w-8 bg-black mr-2 p-1 rounded-lg" />
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <section className="md:my-28">
+          <SectionTitle title="OFFICE OF STUDENT AFFAIRS" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {dataOSA.map((member) => (
+              <TeamMemberCard key={member.name} member={member} />
             ))}
           </div>
         </section>
 
         {/* ORGANISING COMMITTEE */}
-        <section className="mb-1 md:mb-16">
-          <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
-            <span
-              className="text-black bg-clip-text"
-            >
-              ORGANISING COMMITTEE
-            </span>
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[3rem] mx-[1rem] md:mx-[1rem]">
-            {importedDataOC.map((member) => (
-              <div key={member.name} className="relative text-white">
-                <div className="absolute inset-0.5 md:-inset-0.5"></div>
-                <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
-                  <div className="w-1/2 md:mb-4 relative h-[8rem] md:h-[14rem] md:w-[14rem] overflow-hidden rounded-full shadow-lg md:mx-auto">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className=""
-                    />
-                  </div>
-                  <div className="flex-grow"></div>
-                  <div className="w-1/2 md:w-full m-2">
-                    <div className="flex flex-col justify-center items-center">
-                      <p className="font-bold text-black text-center text-sm md:text-lg mb-2">
-                        {member.name}
-                      </p>
-                      <Link href={member.linkedin}>
-                      <FaLinkedin className="h-6 w-6 md:h-8 md:w-8 bg-black  mr-2 p-1 rounded-lg" />
-                      </Link>                      
-                      <p className="flex justify-center text-black md:pt-2 hover:underline">
-                        <FaPhone className="h-5 w-5 mr-2" />
-                        {member.contact}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <section className="my-32">
+          <SectionTitle title="ORGANISING COMMITTEE" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {dataOC.map((member) => (
+              <TeamMemberCard key={member.name} member={member} showContact={true} />
             ))}
           </div>
         </section>
 
         {/* COORDINATORS */}
-        <section className="">
-          <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[4rem] md:my-[3rem] text-[#f58b40]">
-            <span
-              className="text-black  bg-clip-text"
-            >
-              COORDINATORS
-            </span>
-          </h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 md:gap-8 mx-[0.5rem] md:mx-[5rem]">
-            {importedDataTeam.map((member) => (
-              <div
-                key={member.name}
-                className="flex flex-col text-white items-around text-center md:text-center justify-self-center mb-8"
-              >
-                <div className="relative h-[9rem] w-[9rem] md:h-40 md:w-40 overflow-hidden rounded-full mx-auto shadow-lg ">
+        <section>
+          <SectionTitle title="COORDINATORS" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            {dataTeam.map((member) => (
+              <div key={member.name} className="flex flex-col items-center text-center">
+                <div className="relative h-32 w-32 md:h-40 md:w-40 mb-4">
                   <Image
                     src={member.photo}
-                    alt={member.name}
-                    fill
-                    style={{ objectFit: "cover" }}
+                    alt={`Photo of ${member.name}`}
+                    layout="fill"
+                    objectFit="cover"
                     className="rounded-full"
+                    priority
                   />
                 </div>
-                <div className="flex flex-col items-center text-center">
-                  <p className="font-bold text-black text-base mt-[1rem] text-center md:text-[1.7rem] md:mb-[1rem]">
-                    {member.name}
+                <h3 className="font-bold text-lg mb-1">{member.name}</h3>
+                <p className="text-gray-600 text-sm mb-2">{member.committee}</p>
+                <Link href={member.linkedin}>
+                  <p aria-label={`LinkedIn profile of ${member.name}`} className="text-blue-600 hover:underline text-sm">
+                    LinkedIn
                   </p>
-                  <Link href={member.linkedin}>
-                    <FaLinkedin className="h-6 w-6 md:h-8 md:w-8 bg-black  mr-2 p-1 rounded-lg" />
-                  </Link>                      
-                  <p className="mb-2 text-base text-[1.2rem] text-center px-1 md:px-0">
-                    <span
-                      className="text-black font-bold bg-clip-text"
-                    >
-                      {member.committee}
-                    </span>
-                  </p>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
         </section>
-
-        {/* Volunteers */}
-
-
       </div>
     </div>
   );
