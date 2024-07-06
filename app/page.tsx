@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
-import speakers from "../public/speaker.webp";
 import AboutAarambh from "./components/aboutaarambh";
 import Workshops from "./components/workshops";
 
@@ -32,14 +31,6 @@ export default function Home() {
         <div className="pt-[2rem] mt-2 md:pt-0">
           <Workshops />
         </div>
-      </div>
-      <div className="bg-[#FFF9F7] px-[1rem] md:px-[5rem] w-full">
-        <Image
-          src={speakers}
-          alt="Speakers"
-          layout="responsive"
-          className=""
-        />
       </div>
     </main>
   );

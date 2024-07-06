@@ -48,6 +48,7 @@ const Header: React.FC = () => {
 
           <nav className="hidden lg:flex items-center space-x-8">
             <NavLink href="/" text="HOME" active={pathname === "/"} />
+            <NavLink href="/speakers" text="SPEAKERS" active={pathname === "/speakers"} />
             <NavLink href="/team" text="TEAM" active={pathname === "/team"} />
             <MyComponent downloadbutton='download' />
           </nav>
@@ -65,6 +66,7 @@ const Header: React.FC = () => {
           </button>
           <nav className="flex flex-col space-y-6 mt-16">
             <NavLink href="/" text="HOME" active={pathname === "/"} mobile />
+            <NavLink href="/speakers" text="SPEAKERS" active={pathname === "/speakers"} mobile />
             <NavLink href="/team" text="TEAM" active={pathname === "/team"} mobile />
             <div className="mt-6 border-white">
               <MyComponent downloadbutton='download' />

@@ -91,17 +91,10 @@
         "linkedin": "https://www.linkedin.com/in/akshat-jain-a0875512?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-        "name": "Amitanshu R. Shrivastav",
-        "event": "Game Design",
-        "description": " Product Designer | Member of Board of Studies for Product Design at Rajasthan Skills University | Faculty at Design Institute, JKLU",
-        "photo": "/speakers/Amitanshu.jpg",
-        "linkedin": "https://www.linkedin.com/in/amitanshu-shrivastava-1718641a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
         "name": "Dr. Anju Chawla",
         "event": "Pathways To Purpose: Unvieling Your Dreams",
         "description": "Professional Certified Coach | Licensed Emotional Intelligence Trainer | Leadership Training and Coaching",
-        "photo": "/speakers/AnjuChawla.jpg",
+        "photo": "/speakers/AnjuChawla.jpeg",
         "linkedin": "https://www.linkedin.com/in/dr-anju-chawla-eqadvantage?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
@@ -122,21 +115,21 @@
         "name": "Garima Poornia",
         "event": "From Waste to Wisdom: Rethinking Plastics",
         "description": "Founder of the Kachrewaale Foundation Honored with the 3rd Samir Acharya Memorial Award",
-        "photo": "/speakers/GarimaPoornia.jpg",
+        "photo": "/speakers/GarimaPoonia.jpeg",
         "linkedin": "https://www.linkedin.com/in/garima-poonia-545a67203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         "name": "AIC",
         "event": "Entrepreneurship Workshop by AIC",
         "description": "Atal Incubation Centre-JK Lakshmipat University is established with the support of AIM, NITI Aayog and JK Lakshmipat University in 2019. In the last 4 years, AIC-JKLU has supported 55 startups in various sectors including Fintech, Ed-tech, EVs Agritech and more.",
-        "photo": "/speakers/AIC.jpg",
+        "photo": "/speakers/AIC.png",
         "linkedin": "https://www.linkedin.com/company/aic-jklu/"
     },
     {
         "name": "Rang Mastaaney",
         "event": "Theatre WorkShop",
         "description": "Rang mastaaney has been operational for nearly 13 years, during which they have staged over 65 plays and produced more than 250 stage performances, along with over 1000 street performances of 'Ab Bas.' Notably Rangmastaaney stands out as the only theater group in the country to have presented 7 Different plays by same Team over 4 consecutive days in Alwar",
-        "photo": "/speakers/RangMastaaney.jpg",
+        "photo": "/speakers/RangMastaaney.jpeg",
         "linkedin": "https://www.instagram.com/rangmastaaney?igsh=MXcxY3pudmJ3YjkxZw=="
     },
     {
@@ -150,12 +143,12 @@
         "name": "ToastMasters",
         "event": "Session on Public Speaking",
         "description": "Pravah is a registered society that promulgates ‘Active Citizenship’ and works towards developing the potential of young people for social change in partnership with youth organizations, as well as schools and colleges in India and internationally.",
-        "photo": "/speakers/toastmasters.png",
+        "photo": "/speakers/toastmasters.jpg",
         "linkedin": ""
     },
     {
-        "name": "Session on Mindery",
-        "event": "WorkShop on Wellbeign",
+        "name": "Mindery",
+        "event": "WorkShop on Wellbeing",
         "description": "Pravah is a registered society that promulgates ‘Active Citizenship’ and works towards developing the potential of young people for social change in partnership with youth organizations, as well as schools and colleges in India and internationally.",
         "photo": "/speakers/mindery.png",
         "linkedin": ""
