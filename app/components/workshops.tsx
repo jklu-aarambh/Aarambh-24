@@ -52,14 +52,14 @@ const Workshops: React.FC = () => {
         <WorkshopItem 
           title="Ice Breaking"
           description="Join Manish Freeman for an unforgettable ice-breaking session! Break free from the norm, have fun, and create lasting memories. It's your chance to meet new people, share laughter, and step out of your comfort zone."
-          imageSrc="/aarambh-pictures/icebreaking.jpg"
+          imageSrc="/aarambh-pictures/aarambh-3.webp"
           imageAlt="Ice Breaking Session"
         />
         
         <WorkshopItem 
           title="Manzil Mystics"
           description="Experience India's First Mobile Music Classroom and Recording Studio at JK Lakshmipat University! Craft your own anthem, rock the Music Bus, jam with the Mystics, and star in a music video. Unleash your inner rockstar!"
-          imageSrc="/aarambh-pictures/manzilmystics.jpg"
+          imageSrc="/aarambh-pictures/manzilmystics.webp"
           imageAlt="Manzil Mystics"
           reverse={true}
         />
@@ -67,14 +67,14 @@ const Workshops: React.FC = () => {
         <WorkshopItem 
           title="Rang Mastaaney"
           description="For 13 years, Rang Mastaaney has been captivating audiences with their performances. With a repertoire of 65 plays, 250 stage productions, and 1000 street shows, they're the only theatre group in India to present 7 different plays in 4 consecutive days."
-          imageSrc="/aarambh-pictures/rangmastaaney.jpg"
+          imageSrc="/aarambh-pictures/rangmastaaney.webp"
           imageAlt="Rang Mastaaney"
         />
         
         <WorkshopItem 
           title="Pottery and Clay"
           description="Discover the joy of pottery! Learn various ceramic techniques from experienced instructors. It's not just an art form but also a relaxing activity that allows you to explore your creative side."
-          imageSrc="/aarambh-pictures/potteryclay.jpg"
+          imageSrc="/aarambh-pictures/potteryclay.webp"
           imageAlt="Pottery and Clay Workshop"
           reverse={true}
         />
@@ -82,7 +82,7 @@ const Workshops: React.FC = () => {
         <WorkshopItem 
           title="Pravah"
           description="Join Pravah's 'Self to Society: Explorations & Awareness' workshop at J.K. Lakshmipat University. Embark on a journey of self-discovery, enhance your communication skills, and develop teamwork and empathy through engaging activities and discussions."
-          imageSrc="/aarambh-pictures/pravah.jpg"
+          imageSrc="/aarambh-pictures/pravah.webp"
           imageAlt="Pravah Workshop"
         />
       </div>

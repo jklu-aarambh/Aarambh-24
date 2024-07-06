@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
-import speakers from "../public/speaker.png";
-import Poster from "./components/poster";
+import speakers from "../public/speaker.webp";
 import AboutAarambh from "./components/aboutaarambh";
 import Workshops from "./components/workshops";
 
@@ -12,14 +11,14 @@ export default function Home() {
     <main className={`${montserrat.className}`}>
       <div className="relative w-full h-[450px] md:h-screen">
           <Image
-            src="/banner.png"
+            src="/banner.webp"
             alt="Cover Picture"
             fill
             style={{ objectFit: "cover" }}
             className="hidden md:block"
           />
           <Image
-            src="/posterportrait.png"
+            src="/bannerportrait.webp"
             alt="Cover Picture"
             fill
             style={{ objectFit: "cover" }}
