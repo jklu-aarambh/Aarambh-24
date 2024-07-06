@@ -37,10 +37,10 @@ const Workshops: React.FC = () => {
       <h1 className="font-bold text-center text-3xl md:text-4xl mb-8">WORKSHOPS</h1>
       <div className="max-w-5xl mx-auto text-center text-xl mb-12">
         <p className="mb-4">
-          Welcome to Aarambh 2024, an 18-day program from July 8th to July 25th, 2024, designed for our new Batch of 2024 students.
+        Welcome to AARAMBH 2024, an 18-day program from July 8th to July 25th, 2024, designed for our new batch of 2024 students.
         </p>
         <p className="mb-4">
-          Aarambh 2024 is filled with learning, fun, and celebration. Expect inspiring talks, hands-on workshops, and engaging activities that will spark your creativity and expand your knowledge. Every day promises to be extraordinary, making Aarambh 2024 an unforgettable experience for everyone at JKLU.
+        AARAMBH 2024 is filled with learning, fun, and celebration. Expect inspiring talks, hands-on workshops, and engaging activities to spark your creativity and expand your knowledge. Every day promises to be extraordinary, making AARAMBH 2024 an unforgettable experience for everyone at JKLU.
         </p>
       </div>
       
@@ -51,7 +51,7 @@ const Workshops: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <WorkshopItem 
           title="Ice Breaking"
-          description="Join Manish Freeman for an unforgettable ice-breaking session! Break free from the norm, have fun, and create lasting memories. It's your chance to meet new people, share laughter, and step out of your comfort zone."
+          description="Join Manish Freeman for an unforgettable, ice-breaking session! Break free from the norm, have fun, and create lasting memories. It's your chance to meet new people, share laughter, and step out of your comfort zone."
           imageSrc="/aarambh-pictures/aarambh-3.webp"
           imageAlt="Ice Breaking Session"
         />
@@ -66,14 +66,14 @@ const Workshops: React.FC = () => {
         
         <WorkshopItem 
           title="Rang Mastaaney"
-          description="For 13 years, Rang Mastaaney has been captivating audiences with their performances. With a repertoire of 65 plays, 250 stage productions, and 1000 street shows, they're the only theatre group in India to present 7 different plays in 4 consecutive days."
+          description="Rang Mastaaney has been enthralling audiences with their performances for thirteen years. They are the only theater organization in India to offer seven different plays in four days straight, with a repertory that includes 250 stage productions, 1000 street shows, and 65 plays."
           imageSrc="/aarambh-pictures/rangmastaaney.webp"
           imageAlt="Rang Mastaaney"
         />
         
         <WorkshopItem 
           title="Pottery and Clay"
-          description="Discover the joy of pottery! Learn various ceramic techniques from experienced instructors. It's not just an art form but also a relaxing activity that allows you to explore your creative side."
+          description="Discover the joy of pottery! Learn various ceramic techniques from experienced instructors. It's not just an art foEnjoy the pleasures of ceramics! Discover a range of ceramic skills from knowledgeable teachers. It is a peaceful pastime that lets you express your creativity as well as a kind of art."
           imageSrc="/aarambh-pictures/potteryclay.webp"
           imageAlt="Pottery and Clay Workshop"
           reverse={true}
@@ -81,7 +81,7 @@ const Workshops: React.FC = () => {
         
         <WorkshopItem 
           title="Pravah"
-          description="Join Pravah's 'Self to Society: Explorations & Awareness' workshop at J.K. Lakshmipat University. Embark on a journey of self-discovery, enhance your communication skills, and develop teamwork and empathy through engaging activities and discussions."
+          description="Participate in the J.K. Lakshmipat University session 'Self to Society: Explorations & Awareness' with Pravah. Through thought-provoking exercises and conversations, you may jumpstart your self-discovery, improve your communication abilities, and foster empathy and teamwork."
           imageSrc="/aarambh-pictures/pravah.webp"
           imageAlt="Pravah Workshop"
         />

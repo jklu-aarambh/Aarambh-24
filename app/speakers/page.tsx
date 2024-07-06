@@ -1,6 +1,6 @@
 import dataTeam from "../data/dataTeam.json";
 import dataOC from "../data/dataOC.json";
-import dataOSA from "../data/dataOSA.json";
+import dataSpeakers from "../data/speakers.json";
 import Image from "next/image";
 import Link from 'next/link';
 import { Inter, Montserrat } from "next/font/google";
@@ -27,9 +27,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => (
 );
 
 const Team: React.FC = () => {
-  const importedDataOC = dataOC;
-  const importedDataTeam = dataTeam;
-  const importedDataOSA = dataOSA;
+  const importedDataSpeakers = dataSpeakers;
 
   return (
     <div className="">
@@ -37,21 +35,17 @@ const Team: React.FC = () => {
         className={`mx-[1rem] md:mx-[5rem] lg:mx-[5rem] mt-8 md:mt-8 mb-[5rem] md:mb-[10rem] ${montserrat.className}`}
       >
 
-        {/* OFFICE OF STUDENT AFFAIRS */}
+        {/* Speakers List */}
         <section className="flex flex-col justify-center mb-1 md:mb-16">
           <h3 className="text-[1.8rem] md:text-[2.5rem] font-bold text-center my-[2rem] md:my-[3rem] text-[#f58b40]">
             <span
               className="text-black bg-clip-text"
-            // style={{
-            //   backgroundImage:
-            //     "linear-gradient(90deg, #b22d4e 15%, #249683 84.22%)",
-            // }}
             >
-              OFFICE OF STUDENT AFFAIRS
+              SPEAKERS LIST
             </span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[1rem] mx-[1rem] md:mx-[1rem]">
-            {importedDataOSA.map((member) => (
+            {importedDataSpeakers.map((member) => (
               <div key={member.name} className="relative text-white">
                 <div className="absolute inset-0.5 md:-inset-0.5"></div>
                 <div className="relative flex flex-row md:flex-col align-center items-center justify-center p-4 md:p-2">
@@ -66,27 +60,22 @@ const Team: React.FC = () => {
                   </div>
                   <div className="w-1/2 md:w-full m-1">
                     <div className="flex flex-col justify-center items-center">
-                      <p className="font-bold text-black text-center text-base md:text-lg mb-">
-                        {member.name}
-                      </p>
-                      <p className="flex justify-center text-center text-[#737373] hover:underline">
-                        {member.committee}
-                      </p>
-                      {/* <p className="flex justify-center text-black hover:underline">
-                        {member.contact}
-                      </p> */}
-                      <ul className="flex sm:flex-row justify-center lg:justify-between md:justify-center my-4">
-                        <li className="items-center lg:mx-4 mb-2">
-                          <Link href={"mailto:" + member.email}>
-                            <FaEnvelope className="h-8 w-8 mr-2 bg-black p-1 rounded-lg" />
+                      <div className="flex flex-row items-center">
+
+                        <ul className="flex sm:flex-row justify-center place-items-center lg:justify-between md:justify-center my-2">
+                          <li className="items-center lg:mx-4 mb-1">
+                            <Link href={member.linkedin}>
+                              <p className="font-bold text-black text-center hover:underline text-base md:text-xl mb-">
+                                {member.name}
+                              </p>
                           </Link>
-                        </li>
-                        <li className="items-center lg:mx-4 mb-2">
-                          <Link href={member.linkedin}>
-                            <FaLinkedin className="h-8 w-8 bg-black mr-2 p-1 rounded-lg" />
-                          </Link>
-                        </li>
-                      </ul>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <p className="flex justify-center text-center text-[#737373]">
+                        {member.event}
+                      </p>
                     </div>
                   </div>
                 </div>
