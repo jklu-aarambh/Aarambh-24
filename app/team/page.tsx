@@ -36,7 +36,7 @@ const Team: React.FC = () => {
             //     "linear-gradient(90deg, #b22d4e 15%, #249683 84.22%)",
             // }}
             >
-              OFFICE OF STUDENT AFFFAIRS
+              OFFICE OF STUDENT AFFAIRS
             </span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-[1rem] mx-[1rem] md:mx-[1rem]">
