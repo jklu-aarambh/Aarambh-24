@@ -8,7 +8,7 @@
     },
     {
         "name": "Kiran Chauhan",
-        "event": "Creative Writing",
+        "event": "Discovering the Self through Writing",
         "description": "",
         "photo": "/speakers/KiranChauhan.jpg",
         "linkedin": "https://www.linkedin.com/in/kiran-chauhan-77a7321a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -22,7 +22,7 @@
     },
     {
         "name": "Vibhor Mathur",
-        "event": "Reel Making with AI",
+        "event": "Unleashing Creativity in Reel Designing with AI Tool",
         "description": "",
         "photo": "/speakers/VibhorMathur.jpg",
         "linkedin": "https://www.linkedin.com/in/onlyvibhor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -43,7 +43,7 @@
     },
     {
         "name": "US Sharma",
-        "event": "Art & Craft",
+        "event": "Creative Beginnings: Art & Craft",
         "description": "",
         "photo": "/speakers/USSharma.jpg",
         "linkedin": ""
@@ -53,18 +53,25 @@
         "event": "Self Reflection",
         "description": "",
         "photo": "/speakers/DaisySharma.jpg",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/daisy-sharma-66215469?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         "name": "Anjali Suneja",
-        "event": "Social Media & POSH",
+        "event": "The Power of Social Media: Mazimizing Benefits & Mitigating Risks",
         "description": "",
         "photo": "/speakers/AnjaliSuneja.jpg",
         "linkedin": "https://www.linkedin.com/in/anjali-suneja-05021427?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
+        "name": "Mukesh Chaudhary",
+        "event": "Session on CyberSecurity",
+        "description": "",
+        "photo": "/speakers/MukeshChaudhary.jpg",
+        "linkedin": ""
+    },
+    {
         "name": "Abhishek Arora",
-        "event": "Anger Management",
+        "event": "Transforming Anger into Calm for a Happier Life",
         "description": "",
         "photo": "/speakers/AbhishekArora.jpg",
         "linkedin": ""
@@ -77,13 +84,6 @@
         "linkedin": "https://www.linkedin.com/in/manish-freeman-a7ab34169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-        "name": "Medha And Team",
-        "event": "PublicSpeaking",
-        "description": "Toastmasters International is a nonprofit educational organization that builds confidence and teaches public speaking skills through a worldwide network of clubs",
-        "photo": "/speakers/MedhaAndTeam.jpg",
-        "linkedin": ""
-    },
-    {
         "name": "Akshat Jain",
         "event": "Data Science In Silicon Valley",
         "description": "Data Science Leader | Leads the data Science Team at Cruise | Leader in Self-Driving Technology",
@@ -94,7 +94,7 @@
         "name": "Amitanshu R. Shrivastav",
         "event": "Game Design",
         "description": " Product Designer | Member of Board of Studies for Product Design at Rajasthan Skills University | Faculty at Design Institute, JKLU",
-        "photo": "/speakers/Amritanshu.jpg",
+        "photo": "/speakers/Amitanshu.jpg",
         "linkedin": "https://www.linkedin.com/in/amitanshu-shrivastava-1718641a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
@@ -108,7 +108,7 @@
         "name": "Campus Caravan",
         "event": "Creating Safer and Inclusive Campus",
         "description": "Interactive Capacity building workshops, deep-dive into a Leadership journey and co-creating policies and mechanisms for supporting Violence-free youth-led spaces",
-        "photo": "/speakers/CampusCaravan.jpg",
+        "photo": "/speakers/CampusCaravan.jpeg",
         "linkedin": ""
     },
     {
@@ -116,34 +116,48 @@
         "event": "Workshop",
         "description": "Passionate about musicians working towards creating a social inclusion and happy childhood through music.",
         "photo": "/speakers/ManzilMystics.jpg",
-        "linkedin": ""
+        "linkedin": "https://www.instagram.com/manzilmystics?igsh=c2V6M21uNDl6Z3E0"
     },
     {
         "name": "Garima Poornia",
         "event": "From Waste to Wisdom: Rethinking Plastics",
         "description": "Founder of the Kachrewaale Foundation Honored with the 3rd Samir Acharya Memorial Award",
         "photo": "/speakers/GarimaPoornia.jpg",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/garima-poonia-545a67203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         "name": "AIC",
         "event": "Entrepreneurship Workshop by AIC",
         "description": "Atal Incubation Centre-JK Lakshmipat University is established with the support of AIM, NITI Aayog and JK Lakshmipat University in 2019. In the last 4 years, AIC-JKLU has supported 55 startups in various sectors including Fintech, Ed-tech, EVs Agritech and more.",
         "photo": "/speakers/AIC.jpg",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/company/aic-jklu/"
     },
     {
         "name": "Rang Mastaaney",
-        "event": "WorkShop",
+        "event": "Theatre WorkShop",
         "description": "Rang mastaaney has been operational for nearly 13 years, during which they have staged over 65 plays and produced more than 250 stage performances, along with over 1000 street performances of 'Ab Bas.' Notably Rangmastaaney stands out as the only theater group in the country to have presented 7 Different plays by same Team over 4 consecutive days in Alwar",
         "photo": "/speakers/RangMastaaney.jpg",
-        "linkedin": ""
+        "linkedin": "https://www.instagram.com/rangmastaaney?igsh=MXcxY3pudmJ3YjkxZw=="
     },
     {
         "name": "Pravah",
         "event": "WorkShop",
         "description": "Pravah is a registered society that promulgates ‘Active Citizenship’ and works towards developing the potential of young people for social change in partnership with youth organizations, as well as schools and colleges in India and internationally.",
-        "photo": "/speakers/Pravah.jpg",
+        "photo": "/speakers/Pravah.jpeg",
+        "linkedin": "https://www.linkedin.com/company/pravahindia/"
+    },
+    {
+        "name": "ToastMasters",
+        "event": "Session on Public Speaking",
+        "description": "Pravah is a registered society that promulgates ‘Active Citizenship’ and works towards developing the potential of young people for social change in partnership with youth organizations, as well as schools and colleges in India and internationally.",
+        "photo": "/speakers/toastmasters.png",
+        "linkedin": ""
+    },
+    {
+        "name": "Session on Mindery",
+        "event": "WorkShop on Wellbeign",
+        "description": "Pravah is a registered society that promulgates ‘Active Citizenship’ and works towards developing the potential of young people for social change in partnership with youth organizations, as well as schools and colleges in India and internationally.",
+        "photo": "/speakers/mindery.png",
         "linkedin": ""
     }
 ]
