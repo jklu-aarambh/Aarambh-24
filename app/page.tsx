@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400"] });
 export default function Home() {
   return (
     <main className={`${montserrat.className}`}>
-      <div className="relative w-full h-[450px] md:h-screen">
+      <div className="relative w-full h-[440px] md:h-screen">
           <Image
             src="/banner.webp"
             alt="Cover Picture"
