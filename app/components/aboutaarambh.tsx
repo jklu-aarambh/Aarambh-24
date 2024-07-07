@@ -83,16 +83,7 @@ function AboutAarambh() {
                 <DownloadTeam downloadbutton='download' />
               </div>
       </div>
-      <div>
-      <Image
-                src="/@/public/speakers/Divine.jpg"
-                alt="aarambh-picture"
-                width={400}
-                height={200}
-                // layout="responsive"
-                className='object-cover rounded-lg'
-              />
-      </div>
+      
       </div>
     </div>
   );
